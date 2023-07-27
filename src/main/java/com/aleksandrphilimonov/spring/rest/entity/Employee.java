@@ -14,10 +14,10 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(int id, String name, String surname, int salary) {
-        this.id = id;
+    public Employee(String name, String surname, String department, int salary) {
         this.name = name;
         this.surname = surname;
+        this.department = department;
         this.salary = salary;
     }
 

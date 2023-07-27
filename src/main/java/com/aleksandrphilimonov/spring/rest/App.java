@@ -13,7 +13,11 @@ public class App {
 //        List<Employee> allEmployees = communication.getAllEmployees();
 //        allEmployees.forEach(System.out::println);
 
-        System.out.println(communication.getEmployee(1));
+//        System.out.println(communication.getEmployee(1));
+
+        Employee employee = new Employee("Zaur", "Tregulov", "HR", 500);
+        employee.setId(1);
+        communication.saveEmployee(employee);
 
     }
 }
