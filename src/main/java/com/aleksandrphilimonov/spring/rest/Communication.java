@@ -46,6 +46,7 @@ public class Communication {
     }
 
     public void deleteEmployee(int id) {
-
+        restTemplate.delete(URL + "/" + id);
+        System.out.println("Employee with id = " + id + " was deleted from DB");
     }
 }
